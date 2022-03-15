@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/dark-city.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.text {
+    height: fit-content;
+    color: transparent;
+    font-size: 5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(img/s-light.png);
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    animation: searchlight 8s ease-in-out infinite;
+}
+
+@keyframes searchlight {
+    0% {
+        background-position-x: 0%;
+    }
+    50% {
+        background-position-x: 100%;
+    }
+    100% {
+        background-position-x: 0%;
+    }
+}
